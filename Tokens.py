@@ -42,3 +42,10 @@ print(c)
 
 ex=10 % 3 * 10 ** 2 + 1 - 10 * 4 / 2
 print(ex)
+
+
+#--------------Excercise-3--------------#
+
+salary = 750 
+raise_percentage = 15 
+print(salary + (salary * raise_percentage / 100))
