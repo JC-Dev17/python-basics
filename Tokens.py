@@ -49,3 +49,17 @@ print(ex)
 salary = 750 
 raise_percentage = 15 
 print(salary + (salary * raise_percentage / 100))
+
+#--------------Excercise-4--------------#
+a=4
+b=10
+c=5.0
+d=1
+f=5
+
+x=(a==c)
+y=(a<b)
+z=(f>=c)
+print(x)
+print(y)
+print(z)
