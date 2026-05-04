@@ -63,3 +63,21 @@ z=(f>=c)
 print(x)
 print(y)
 print(z)
+
+#--------------Excercise-5--------------#
+
+# Data
+rows = [
+    {"A": 1,  "B": 2, "C": True,  "D": False},
+    {"A": 10, "B": 3, "C": False, "D": False},
+    {"A": 5,  "B": 1, "C": True,  "D": True},
+]
+
+# Evaluate and print results
+print(f"{'A':<5} {'B':<5} {'C':<8} {'D':<8} {'Result'}")
+print("-" * 35)
+
+for row in rows:
+    A, B, C, D = row["A"], row["B"], row["C"], row["D"]
+    result = A < B and C or D
+    print(f"{A:<5} {B:<5} {str(C):<8} {str(D):<8} {result}")
