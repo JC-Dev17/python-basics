@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<div class="flex min-h-screen">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-gray-900 text-gray-200 flex flex-col">
+    <div class="p-5 text-xl font-semibold border-b border-gray-800">
+      MyApp
+    </div>
+
+    <nav class="flex-1 p-4 space-y-2">
+      <a href="/home" class="block px-4 py-2 rounded-lg bg-gray-800 text-white">Dashboard</a>
+      <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-800">Users</a>
+      <a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-800">Settings</a>
+      <a href="/logout" class="block px-4 py-2 rounded-lg text-red-400 hover:bg-gray-800">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main class="flex-1 p-6">
+
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-semibold text-gray-800">
+        Welcome, {{ username }}
+      </h1>
+
+      <div class="bg-white px-4 py-2 rounded-lg shadow text-sm">
+        {{ username }}
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+
+      <div class="bg-white p-5 rounded-xl shadow">
+        <p class="text-sm text-gray-500">Total Users</p>
+        <h2 class="text-2xl font-bold mt-2">120</h2>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow">
+        <p class="text-sm text-gray-500">New Users</p>
+        <h2 class="text-2xl font-bold mt-2">8</h2>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow">
+        <p class="text-sm text-gray-500">Active Sessions</p>
+        <h2 class="text-2xl font-bold mt-2">15</h2>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow">
+        <p class="text-sm text-gray-500">Messages</p>
+        <h2 class="text-2xl font-bold mt-2">23</h2>
+      </div>
+
+    </div>
+
+    <!-- Activity -->
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h2 class="text-lg font-semibold mb-4">Recent Activity</h2>
+
+      <ul class="space-y-3 text-sm text-gray-600">
+        <li>✔ User registered</li>
+        <li>✔ New login detected</li>
+        <li>✔ Profile updated</li>
+      </ul>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>
